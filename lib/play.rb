@@ -35,4 +35,11 @@ def turn(board)
   end
 end
 
+def play(board)
+  until position_taken?
+    return false
+    turn(board)
+  end
+end
+
 # Define your play method below
