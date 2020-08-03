@@ -36,7 +36,7 @@ def turn(board)
 end
 
 def play(board)
-  until position_taken?(board, location)
+  until position_taken?(board, " ")
     return false
     turn(board)
   end
